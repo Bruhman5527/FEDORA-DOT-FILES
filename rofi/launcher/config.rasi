@@ -1,0 +1,120 @@
+configuration {
+    show-icons: true;
+    location: 2;
+    display-drun: "";
+    drun-display-format: "{name}";
+}
+
+num-filtered-rows {
+    enabled: false;
+}
+
+num-rows {
+    enabled: false;
+}
+
+textbox-num-sep {
+    enabled: false;
+}
+
+textbox-prompt-colon {
+    enabled: false;
+    str: "";
+}
+
+* {
+    font: "ProFont IIx Nerd Font 15";
+    background-color: @dark0;
+    color: @light0;
+
+    dark0: #2e3440;
+    dark1: #3b4252;
+    dark2: #434c5e;
+    dark3: #4c566a;
+
+    light0: #d8dee9;
+    light1: #e5e9f0;
+    light2: #eceff4;
+
+    blue0: #8fbcbb;
+    blue1: #88c0d0;  
+    blue2: #81a1c1;
+    blue3: #5e81ac;
+
+    red: #bf616a;
+    orange: #d08770;
+    yellow: #ebcb8b;
+    green: #a3be8c;
+    pink: #b48ead;
+}
+
+window {
+    border-radius: 15px;
+    padding: 15;
+    background-color: @dark0;
+    margin: 20 0 0 0;
+}
+
+mainbox {
+    background-color: @dark0;
+}
+
+entry {
+    color: @light0;
+    placeholder-color: transparent;
+    background-color: transparent;
+}
+
+element {
+    border-radius: 10;
+    padding: 2 8;
+    margin: 0 0 5 0;
+}
+
+element normal.normal {
+    background-color: @dark0;
+    text-color:       @light0;
+}
+
+element alternate.normal {
+    background-color: @dark0;
+    text-color:       @light0;
+}
+
+element selected.normal {
+    background-color: @blue2;
+    text-color: @dark0;
+}
+
+element-icon {
+    margin: 0 0 0 3;
+}
+
+prompt {
+    text-color: @light0;
+    background-color: transparent;
+    font: "ProFont IIx Nerd Font Propo 15";
+    margin: 0 15 0 5;
+}
+
+inputbar {
+    text-color: @light0;
+    margin: 0 0 5 0;
+    background-color: @dark1;
+    border-radius: 15;
+    padding: 2 5;
+}
+
+text-box {
+    text-color: @light0;
+    background-color: transparent;
+}
+
+message {
+    text-color: @light0;
+    background-color: transparent;
+}
+
+listview {
+    scrollbar: false;
+}
