@@ -24,7 +24,7 @@ textbox-prompt-colon {
 
 * {
     font: "ProFont IIx Nerd Font 15";
-    background-color: @dark0;
+    background-color: transparent;
     color: @light0;
 
     dark0: #2e3440;
@@ -117,4 +117,6 @@ message {
 
 listview {
     scrollbar: false;
+    border: 0px;
+    spacing: 0px;
 }
