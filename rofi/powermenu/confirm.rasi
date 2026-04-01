@@ -1,0 +1,143 @@
+/* ============================================
+   Nord Confirmation Dialog Theme
+   600x400 — prompt on top, Yes/No buttons below
+   ============================================ */
+
+configuration {
+    hide-scrollbar: true;
+    kb-remove-char-back: "";
+    kb-remove-word-back: "";
+    location: 2;
+}
+
+/* ============ Color Palette ============ */
+* {
+    font: "ProFont IIx Nerd Font 24";
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    dark0: #2e3440;
+    dark1: #3b4252;
+    dark2: #434c5e;
+    dark3: #4c566a;
+
+    light0: #d8dee9;
+    light1: #e5e9f0;
+    light2: #eceff4;
+
+    blue0: #8fbcbb;
+    blue1: #88c0d0;
+    blue2: #81a1c1;
+    blue3: #5e81ac;
+
+    red:    #bf616a;
+    orange: #d08770;
+    yellow: #ebcb8b;
+    green:  #a3be8c;
+    pink:   #b48ead;
+}
+
+/* ============ Window ============ */
+window {
+    background-color: @dark0;
+    border-radius: 15;
+    border: 0;
+    padding: 0;
+    margin: 20 0 0 0;
+    width: 800;
+    height: 193;
+}
+
+/* ============ Layout ============ */
+mainbox {
+    background-color: @dark0;
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+    children: [message, listview];
+}
+
+/* ============ Top 70% — Prompt ============ */
+message {
+    background-color: @dark0;
+    padding: 0;
+    margin: 0;
+    /* Takes up roughly 70% of the height */
+    expand: false;
+    height: 280px;
+}
+
+textbox {
+    background-color: @dark0;
+    text-color: @light0;
+    font: "ProFont IIx Nerd Font 32";
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    height: 280px;
+    padding: 20px;
+}
+
+/* ============ Bottom 30% — Yes/No Buttons ============ */
+listview {
+    lines: 1;
+    columns: 2;
+    spacing: 2px;
+    scrollbar: false;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* Takes up the remaining 30% */
+    height: 118px;
+}
+
+element {
+    padding: 20 0;
+    border-radius: 15;
+    border: 0;
+    outline: 0;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+    text-color: @light0;
+}
+
+element-text.selected {
+    text-color: @dark0;
+}
+
+/* Default state */
+element normal.normal {
+    background-color: @dark0;
+    text-color: @light0;
+}
+
+element alternate.normal {
+    background-color: @dark0;
+    text-color: @light0;
+}
+
+element selected.normal {
+    background-color: @blue2;
+    text-color: @dark0;
+}
+
+/* ============ Disabled ============ */
+inputbar {
+    enabled: false;
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+    children: [];
+}
+
+entry {
+    enabled: false;
+}
+
+prompt {
+    enabled: false;
+}

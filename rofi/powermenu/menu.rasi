@@ -1,0 +1,122 @@
+/* ============================================
+   Nord Power Menu Theme
+   Built for horizontal icon-based power menus
+   ============================================ */
+
+configuration {
+    hide-scrollbar: true;
+    /* Disable typing to prevent accidental input */
+    kb-remove-char-back: "";
+    kb-remove-word-back: "";
+    location: 2;
+}
+
+/* ============ Color Palette ============ */
+* {
+    font: "ProFont IIx Nerd Font 50";
+    background-color: transparent;
+    text-color: @light0;
+    border: none;
+    outline: none;
+
+    /* Nord dark shades */
+    dark0: #2e3440;
+    dark1: #3b4252;
+    dark2: #434c5e;
+    dark3: #4c566a;
+
+    /* Nord light shades */
+    light0: #d8dee9;
+    light1: #e5e9f0;
+    light2: #eceff4;
+
+    /* Nord accent colors */
+    blue0: #8fbcbb;
+    blue1: #88c0d0;
+    blue2: #81a1c1;
+    blue3: #5e81ac;
+
+    red:    #bf616a;
+    orange: #d08770;
+    yellow: #ebcb8b;
+    green:  #a3be8c;
+    pink:   #b48ead;
+}
+
+/* ============ Window ============ */
+window {
+    background-color: @dark0;
+    border-radius: 15;
+    border: 0;
+    padding: 0;
+    margin: 20 0 0 0; 
+}
+
+/* ============ Layout ============ */
+mainbox {
+    background-color: @dark0;
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+    /* Only show the icon list, nothing else */
+    children: [listview];
+}
+
+listview {
+    lines: 1;
+    columns: 5;
+    spacing: 5px;
+    scrollbar: false;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* ============ Elements ============ */
+element {
+    padding: 10 0;
+    border-radius: 15;
+    border: 0;
+    outline: 0;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+}
+
+/* Default state */
+element normal.normal {
+    background-color: @dark0;
+    text-color: @light0;
+}
+
+/* Hovered/selected state — slightly lighter with yellow accent */
+element selected.normal {
+    background-color: @blue2;
+    text-color: @dark0;
+}
+
+element alternate.normal {
+    background-color: @dark0;
+    text-color: @light0;
+}
+
+/* ============ Disabled elements ============ */
+/* These are hidden but defined to prevent layout artifacts */
+inputbar {
+    enabled: false;
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+    children: [];
+}
+
+entry {
+    enabled: false;
+}
+
+prompt {
+    enabled: false;
+}
