@@ -1,0 +1,125 @@
+@import url("nord.css");
+
+*{
+    background-color: transparent;
+    font-family: "ProFont IIx Nerd Font";
+    font-size: 14;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces {
+    background-color: @dark0;
+    margin: 0 0 0 5;
+    padding: 2.5 5;
+    border-radius: 15;
+}
+
+#workspaces button {
+    background-color: @dark1;
+    color: @light0;
+    padding: 0 2;
+    transition: all 0.3s ease-in-out;
+    min-height: 0;
+    border-radius: 15;
+    margin: 5 0;
+}
+
+ #workspaces button.empty {
+   background-color: @dark1;
+   color: @dark3;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+ }
+
+#workspaces button.active {
+    background-color: @blue2;
+    color: @dark0;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20;
+    margin: 2 0;
+}
+
+ #clock {
+    background-color: @dark1;
+    color: @light0;
+    padding: 0 10;
+    border-radius: 15;
+    margin: 4 6 4 6;
+ }
+
+ #custom-notifications {
+    background-color: @dark1;
+    margin: 4 0 4 0;
+    padding: 0 15;
+    border-radius: 15;
+    font-size: 15;
+ }
+
+ #network {
+    margin: 4 6 4 6;
+    background-color: @dark1;
+    padding: 0 12 0 9;
+    border-radius: 15;
+    color: @blue2;
+    font-size: 15;
+ }
+
+ #pulseaudio {
+    background-color: @dark1;
+    padding: 0 10;
+    border-radius: 15;
+    margin: 4 0 4 0;
+    color: @green;
+    font-size: 15;
+ }
+
+ .modules-right {
+   background-color: @dark0;
+   margin: 0 10 0 0;
+   padding: 0 6;
+   border-radius: 15;
+ }
+
+ .modules-left {
+    background-color: @dark0;
+    margin: 0 0 0 10;
+    padding: 0 0;
+    border-radius: 15;
+ }
+
+ #custom-poweroff {
+    color: @red;
+    margin: 0 3 0 10;
+ }
+
+ #custom-launcher {
+    color: @blue2;
+    margin: 0 3 0 7;
+    font-size: 16;
+}
+
+#custom-kb {
+   color: @yellow;
+   margin: 4 5 4 0;
+   padding: 1 8 0 8;
+   background-color: @dark1;
+   border-radius: 15;
+   font-family: "Material Symbols Rounded";
+   font-size: 20;
+}
+
+#tray {
+   background-color: transparent;
+   padding: 0 5 0 0;
+   border-radius: 15;
+   margin: 4 5 4 0;
+}
+
+#tray menu {
+   background-color: @dark0;
+}

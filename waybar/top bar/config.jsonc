@@ -1,0 +1,83 @@
+{
+    "height": 35,
+    "position": "top",
+    "layer": "bottom",
+    "margin-top": 8,
+    "passthrough": false,
+    "modules-left": [
+        "custom/poweroff",
+        "custom/launcher",
+        "clock",
+        "tray"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "custom/kb",
+        "custom/notifications"
+    ],
+    "hyprland/workspaces": {
+        "active-only": false,
+        "height": 1,
+        "layer": "top",
+        "persistent-workspaces": {
+            "*": 5,
+        }
+    },
+    "clock": {
+        "tooltip": true,
+        "tooltip-format": "{:%d.%m}"
+    },
+    "custom/notifications": {
+        "format": "",
+        "on-click": "swaync-client -t"
+    },
+    "network": {
+        "tooltip": false,
+        "format-ethernet": "󰈀",
+        "format-wifi": "  {ifname}",
+        "format-disconnected": "󰖪",
+        "on-click": "nmgui"
+
+    },
+    "pulseaudio": {
+        "tooltip": false,
+        "on-click": "pavucontrol",
+        "format": "{icon}  {volume}%",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "headphone-muted": "",
+            "speaker": "",
+            "alsa_output.usb-Aisa_Expert_Wireless_Audio-03.analog-stereo": "",
+            "alsa_output.usb-Aisa_Expert_Wireless_Audio-03.analog-stereo-muted": ""
+        }
+    },
+
+    "custom/poweroff": {
+        "format": "⏻",
+        "on-click": "~/Documents/DOT-FILES/rofi/powermenu/launch.sh",
+        "tooltip": false
+    },
+
+    "custom/launcher": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "~/Documents/DOT-FILES/rofi/launcher/launch.sh"
+    },
+
+    "custom/kb" : {
+        "format": "\ue312",
+        "tooltip": false,
+        "on-click":"~/Documents/DOT-FILES/scripts/keyboard.sh"
+    },
+
+    "tray": {
+        "icon-size":18,
+        "spacing":2
+    }
+}
+
