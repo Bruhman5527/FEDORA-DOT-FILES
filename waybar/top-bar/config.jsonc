@@ -59,20 +59,20 @@
 
     "custom/poweroff": {
         "format": "⏻",
-        "on-click": "~/Documents/DOT-FILES/rofi/powermenu/launch.sh",
+        "on-click": "~/.config/rofi/powermenu/launch.sh",
         "tooltip": false
     },
 
     "custom/launcher": {
         "format": "",
         "tooltip": false,
-        "on-click": "~/Documents/DOT-FILES/rofi/launcher/launch.sh"
+        "on-click": "~/.config/rofi/launcher/launch.sh"
     },
 
     "custom/kb" : {
         "format": "\ue312",
         "tooltip": false,
-        "on-click":"~/Documents/DOT-FILES/scripts/keyboard.sh"
+        "on-click":"~/Documents/SCRIPTS/keyboard.sh"
     },
 
     "tray": {
