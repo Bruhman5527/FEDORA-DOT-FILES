@@ -2,23 +2,76 @@
     "height": 35,
     "position": "top",
     "layer": "bottom",
-    "margin-top": 8,
+    "margin-top": 0,
     "passthrough": false,
     "modules-left": [
-        "custom/poweroff",
-        "custom/launcher",
-        "clock",
-        "tray"
-    ],
-    "modules-center": [
         "hyprland/workspaces"
     ],
+    "modules-center": [
+        "clock"
+    ],
     "modules-right": [
+        "tray",
+        "group/utilities",
+        "group/menu"
+    ],
+
+    "group/menu": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration" : 250,
+            "transition-left-to-right": false,
+            "children-class": "menu-child"
+        },
+        "modules": [
+            "custom/poweroff",
+            "custom/exit",
+            "custom/lock",
+            "custom/sleep",
+            "custom/reboot"
+        ]
+    },
+
+    "custom/poweroff": {
+        "format": "⏻",
+        "on-click": "poweroff",
+        "tooltip": false
+    },
+
+    "custom/reboot": {
+        "format": "",
+        "on-click": "reboot",
+        "tooltip": false
+    },
+
+        "custom/sleep": {
+        "format": "󰤄",
+        "on-click": "systemctl suspend",
+        "tooltip": false
+    },
+
+     "custom/lock": {
+        "format": "",
+        "on-click": "hyprlock",
+        "tooltip": false
+    },
+
+    "custom/exit": {
+        "format": "󰈆",
+        "on-click": "hyprctl dispatch exit",
+        "tooltip": false
+    },
+
+    "group/utilities": {
+        "orientation": "horizontal",
+        "modules": [
         "pulseaudio",
         "network",
         "custom/kb",
         "custom/notifications"
-    ],
+        ]
+    },
+
     "hyprland/workspaces": {
         "active-only": false,
         "height": 1,
@@ -46,7 +99,7 @@
     "pulseaudio": {
         "tooltip": false,
         "on-click": "pavucontrol",
-        "format": "{icon}  {volume}%",
+        "format": "{icon}",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
@@ -57,20 +110,8 @@
         }
     },
 
-    "custom/poweroff": {
-        "format": "⏻",
-        "on-click": "~/.config/rofi/powermenu/launch.sh",
-        "tooltip": false
-    },
-
-    "custom/launcher": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launcher/launch.sh"
-    },
-
     "custom/kb" : {
-        "format": "\ue312",
+        "format": "",
         "tooltip": false,
         "on-click":"~/Documents/SCRIPTS/keyboard.sh"
     },

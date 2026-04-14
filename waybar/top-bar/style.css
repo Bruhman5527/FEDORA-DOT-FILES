@@ -2,12 +2,12 @@
 
 *{
     background-color: transparent;
-    font-family: "ProFont IIx Nerd Font";
-    font-size: 14;
+    font-family: "Outfit Regular";
+    font-size: 16;
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: @dark0;
 }
 
 #workspaces {
@@ -19,17 +19,18 @@ window#waybar {
 
 #workspaces button {
     background-color: @dark1;
-    color: @light0;
-    padding: 0 4;
+    color: transparent;
+    font-family: "Outfit Bold";
+    padding: 0 0;
     transition: all 0.3s ease-in-out;
     min-height: 0;
     border-radius: 15;
-    margin: 5 0;
+    margin: 6 1;
 }
 
  #workspaces button.empty {
    background-color: @dark1;
-   color: @dark3;
+   color: transparent;
 }
 
 #workspaces button.urgent {
@@ -40,77 +41,76 @@ window#waybar {
     background-color: @blue2;
     color: @dark0;
     transition: all 0.3s ease-in-out;
-    padding: 0 20;
-    margin: 2 0;
+    padding: 0 15;
 }
 
  #clock {
-    background-color: @dark1;
+    background-color: transparent;
     color: @light0;
     padding: 0 10;
     border-radius: 15;
     margin: 4 6 4 6;
+    font-size: 17;
+   font-family: "Outfit Bold";
  }
 
  #custom-notifications {
-    background-color: @dark1;
-    margin: 4 0 4 0;
-    padding: 0 15;
+    background-color: transparent;
+    margin: 4 12 4 0;
+    padding: 0 0;
     border-radius: 15;
-    font-size: 15;
+    font-size: 14;
  }
 
  #network {
-    margin: 4 6 4 6;
-    background-color: @dark1;
-    padding: 0 12 0 9;
+    margin: 4 15 4 0;
+    background-color: transparent;
     border-radius: 15;
     color: @blue2;
     font-size: 15;
+    padding: 1 0 0 0;
  }
 
  #pulseaudio {
-    background-color: @dark1;
-    padding: 0 10;
+    background-color: transparent;
+    padding: 0 0;
     border-radius: 15;
-    margin: 4 0 4 0;
+    margin: 4 17 4 12;
     color: @green;
     font-size: 15;
  }
 
  .modules-right {
    background-color: @dark0;
-   margin: 0 10 0 0;
+   margin: 0 0 0 0;
    padding: 0 6;
    border-radius: 15;
+   font-family: "Material Symbols Rounded";
  }
 
  .modules-left {
     background-color: @dark0;
-    margin: 0 0 0 10;
+    margin: 0 0 0 0;
     padding: 0 0;
     border-radius: 15;
  }
 
- #custom-poweroff {
-    color: @red;
-    margin: 0 3 0 10;
- }
-
  #custom-launcher {
     color: @blue2;
-    margin: 0 3 0 7;
-    font-size: 16;
+    margin: 0 14 0 5;
+    padding: 2 0 0 0;
+    font-size: 18;
+    font-family: "MesloLGS Nerd Font";
 }
 
 #custom-kb {
    color: @yellow;
-   margin: 4 5 4 0;
-   padding: 1 8 0 8;
-   background-color: @dark1;
+   margin: 0 17 0 0;
+   padding: 1 0 0 0;
+   background-color: transparent;
    border-radius: 15;
-   font-family: "Material Symbols Rounded";
-   font-size: 20;
+   font-family: "MesloLGS Nerd Font";
+   font-size: 16;
 }
 
 #tray {
@@ -123,3 +123,57 @@ window#waybar {
 #tray menu {
    background-color: @dark0;
 }
+
+#menu {
+   margin: 4 2 4 0;
+   background-color: @dark1;
+   padding: 0 10 0 11;
+   border-radius: 15;
+}
+
+#utilities {
+   background-color: @dark1;
+   margin: 4 7 4 0;
+   border-radius: 15;
+}
+
+ #custom-poweroff {
+    color: @red;
+    margin: 0 4 0 0;
+    padding: 0 0 0 0;
+    font-family: "MesloLGS Nerd Font";
+    font-size: 16;
+
+ }
+
+  #custom-reboot {
+    color: @light0;
+    margin: 0 10 0 0;
+    padding: 2 0 0 0;
+    font-family: "MesloLGS Nerd Font";
+    font-size: 18;
+ }
+
+#custom-sleep {
+    color: @blue3;
+    margin: 0 8 0 0;
+    padding: 1 0 0 0;
+    font-family: "MesloLGS Nerd Font";
+    font-size: 18;
+ }
+
+ #custom-lock {
+    color: @light0;
+    margin: 0 11 0 0;
+    padding: 1 0 0 0;
+    font-family: "MesloLGS Nerd Font";
+    font-size: 15;
+ }
+
+ #custom-exit {
+    color: @red;
+    margin: 0 11 0 2;
+    padding: 2 0 0 0;
+    font-family: "MesloLGS Nerd Font";
+    font-size: 18;
+ }

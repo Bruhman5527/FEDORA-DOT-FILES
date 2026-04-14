@@ -22,3 +22,28 @@
     background: @dark0;
     margin: 10px 10px 0 0;
 } 
+
+/*-----Buttons grid-----*/
+
+.widget-buttons-grid {
+    margin: 15px 0 0 20px;
+    padding: 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background: @dark1;
+    margin: 0 2px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: @dark2;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild {
+  background: transparent;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild:focus {
+  outline: none;
+  box-shadow: none;
+}
