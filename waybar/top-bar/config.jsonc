@@ -1,8 +1,9 @@
 {
-    "height": 35,
+    "height": 37,
     "position": "top",
-    "layer": "bottom",
+    "layer": "top",
     "margin-top": 0,
+    "exclusive": false,
     "passthrough": false,
     "modules-left": [
         "hyprland/workspaces"
@@ -44,7 +45,7 @@
         "tooltip": false
     },
 
-        "custom/sleep": {
+    "custom/sleep": {
         "format": "󰤄",
         "on-click": "systemctl suspend",
         "tooltip": false

@@ -52,7 +52,7 @@ window {
     border-radius: 15px;
     padding: 15;
     background-color: @dark0;
-    margin: 20 0 0 0;
+    margin: 55 0 0 0;
 }
 
 mainbox {

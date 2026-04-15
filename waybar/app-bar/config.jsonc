@@ -1,0 +1,77 @@
+{
+    "height": 380,
+    "width": 40,
+    "margin-left": 6,
+    "position": "left",
+    "layer": "top",
+    "control-center-exclusive-zone": false,
+    "exclusive": false,
+
+    "modules-left": [
+        "image#brave",
+        "image#discord",
+        "image#steam",
+        "image#modrinth",
+        "image#sober",
+        "image#thunar",
+        "image#vs",
+        "image#godot",
+        "image#zap"
+    ],
+
+    "image#brave": {
+        "path":"/usr/share/ICONS/Brave.png",
+        "size": 32,
+        "on-click": "brave-browser"
+    },
+
+    "image#discord": {
+        "path":"/usr/share/ICONS/Discord.png",
+        "size": 36,
+        "on-click": "flatpak run dev.vencord.Vesktop"
+    },
+
+    "image#steam": {
+        "path":"/usr/share/ICONS/Steam.png",
+        "size": 30,
+        "on-click": "steam"
+    },
+
+    "image#modrinth": {
+        "path":"/usr/share/ICONS/Modrinth.png",
+        "size": 34,
+        "on-click": "flatpak run com.modrinth.ModrinthApp"
+    },
+
+    "image#sober": {
+        "path":"/usr/share/ICONS/Sober.png",
+        "size": 30,
+        "on-click": "flatpak run org.vinegarhq.Sober"
+    },
+
+    "image#thunar": {
+        "path":"/usr/share/ICONS/Thunar.png",
+        "size": 30,
+        "on-click": "thunar"
+    },
+
+    "image#vs": {
+        "path":"/usr/share/ICONS/VSCodium.png",
+        "size": 32,
+        "on-click": "flatpak run com.vscodium.codium"
+    },
+
+    "image#godot": {
+        "path": "/usr/share/ICONS/Godot.svg",
+        "size": 32,
+        "on-click": "godot"
+    },
+
+    "image#zap": {
+        "path": "/usr/share/ICONS/ZapZap.png",
+        "size": 30,
+        "on-click": "flatpak run com.rtosta.zapzap"
+    }
+
+}
+

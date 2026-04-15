@@ -2,7 +2,7 @@
 
 *{
     background-color: transparent;
-    font-family: "Outfit Regular";
+    font-family: "Outfit Medium";
     font-size: 16;
 }
 
@@ -18,14 +18,14 @@ window#waybar {
 }
 
 #workspaces button {
-    background-color: @dark1;
+    background-color: @dark3;
     color: transparent;
-    font-family: "Outfit Bold";
     padding: 0 0;
     transition: all 0.3s ease-in-out;
     min-height: 0;
     border-radius: 15;
     margin: 6 1;
+   font-family: "Outfit Medium";
 }
 
  #workspaces button.empty {
@@ -50,34 +50,34 @@ window#waybar {
     padding: 0 10;
     border-radius: 15;
     margin: 4 6 4 6;
-    font-size: 17;
-   font-family: "Outfit Bold";
+    font-size: 18;
+   font-family: "Outfit Medium";
  }
 
  #custom-notifications {
     background-color: transparent;
-    margin: 4 12 4 0;
+    margin: 4 11 4 0;
     padding: 0 0;
     border-radius: 15;
-    font-size: 14;
+    font-size: 16;
  }
 
  #network {
-    margin: 4 15 4 0;
+    margin: 0 20 0 0;
     background-color: transparent;
     border-radius: 15;
     color: @blue2;
-    font-size: 15;
-    padding: 1 0 0 0;
+    font-size: 18;
+    padding: 0 0 1 0;
  }
 
  #pulseaudio {
     background-color: transparent;
-    padding: 0 0;
+    padding: 0 0 2 0;
     border-radius: 15;
-    margin: 4 17 4 12;
+    margin: 4 22 4 0;
     color: @green;
-    font-size: 15;
+    font-size: 17;
  }
 
  .modules-right {
@@ -105,12 +105,12 @@ window#waybar {
 
 #custom-kb {
    color: @yellow;
-   margin: 0 17 0 0;
-   padding: 1 0 0 0;
+   margin: 0 23 0 0;
+   padding: 0 0 0 0;
    background-color: transparent;
    border-radius: 15;
    font-family: "MesloLGS Nerd Font";
-   font-size: 16;
+   font-size: 19;
 }
 
 #tray {
@@ -122,6 +122,11 @@ window#waybar {
 
 #tray menu {
    background-color: @dark0;
+   margin: 0 0 0 0;
+}
+
+#tray widget>image {
+   margin: 0 5 0 0;
 }
 
 #menu {
@@ -132,8 +137,8 @@ window#waybar {
 }
 
 #utilities {
-   background-color: @dark1;
-   margin: 4 7 4 0;
+   background-color: transparent;
+   margin: 4 0 4 0;
    border-radius: 15;
 }
 
@@ -142,38 +147,38 @@ window#waybar {
     margin: 0 4 0 0;
     padding: 0 0 0 0;
     font-family: "MesloLGS Nerd Font";
-    font-size: 16;
+    font-size: 17;
 
  }
 
   #custom-reboot {
     color: @light0;
-    margin: 0 10 0 0;
+    margin: 0 12 0 0;
     padding: 2 0 0 0;
     font-family: "MesloLGS Nerd Font";
-    font-size: 18;
+    font-size: 19;
  }
 
 #custom-sleep {
-    color: @blue3;
-    margin: 0 8 0 0;
+    color: @light0;
+    margin: 0 10 0 0;
     padding: 1 0 0 0;
     font-family: "MesloLGS Nerd Font";
-    font-size: 18;
+    font-size: 19;
  }
 
  #custom-lock {
     color: @light0;
-    margin: 0 11 0 0;
+    margin: 0 13 0 0;
     padding: 1 0 0 0;
     font-family: "MesloLGS Nerd Font";
-    font-size: 15;
+    font-size: 16;
  }
 
  #custom-exit {
-    color: @red;
-    margin: 0 11 0 2;
+    color: @light0;
+    margin: 0 13 0 2;
     padding: 2 0 0 0;
     font-family: "MesloLGS Nerd Font";
-    font-size: 18;
+    font-size: 19;
  }
