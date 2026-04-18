@@ -1,7 +1,8 @@
 {
-    "height": 380,
+    "height": 1200,
     "width": 40,
     "margin-left": 6,
+    "margin-top": 0,
     "position": "left",
     "layer": "top",
     "control-center-exclusive-zone": false,

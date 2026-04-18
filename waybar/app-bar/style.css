@@ -19,12 +19,19 @@
 @define-color pink #b48ead;
 
 window#waybar {
-    background-color: @dark0;
+    background-color: transparent;
     border-radius: 15;
 }
 
+.modules-left {
+    background-color: @dark0;
+    margin: 115 0 0 0;
+    border-radius: 15;
+    padding: 8 0;
+}
+
 .module.brave {
-    margin: 8 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .module.discord {
