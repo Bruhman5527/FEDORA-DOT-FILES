@@ -1,125 +1,49 @@
 {
-    "height": 37,
-    "position": "top",
-    "layer": "top",
-    "margin-top": 0,
-    "exclusive": false,
-    "passthrough": false,
+    "margin-top": 7,
+    "margin-right": 7,
+    "margin-left": 7,
+    
     "modules-left": [
         "hyprland/workspaces"
     ],
+
     "modules-center": [
         "clock"
     ],
+
     "modules-right": [
-        "tray",
-        "group/utilities",
-        "group/menu"
-    ],
-
-    "group/menu": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration" : 250,
-            "transition-left-to-right": false,
-            "children-class": "menu-child"
-        },
-        "modules": [
-            "custom/poweroff",
-            "custom/exit",
-            "custom/lock",
-            "custom/sleep",
-            "custom/reboot"
-        ]
-    },
-
-    "custom/poweroff": {
-        "format": "⏻",
-        "on-click": "poweroff",
-        "tooltip": false
-    },
-
-    "custom/reboot": {
-        "format": "",
-        "on-click": "reboot",
-        "tooltip": false
-    },
-
-    "custom/sleep": {
-        "format": "󰤄",
-        "on-click": "systemctl suspend",
-        "tooltip": false
-    },
-
-     "custom/lock": {
-        "format": "",
-        "on-click": "hyprlock",
-        "tooltip": false
-    },
-
-    "custom/exit": {
-        "format": "󰈆",
-        "on-click": "hyprctl dispatch exit",
-        "tooltip": false
-    },
-
-    "group/utilities": {
-        "orientation": "horizontal",
-        "modules": [
         "pulseaudio",
         "network",
-        "custom/kb",
-        "custom/notifications"
-        ]
-    },
+        "image#fedora"
+    ],
 
     "hyprland/workspaces": {
-        "active-only": false,
-        "height": 1,
-        "layer": "top",
         "persistent-workspaces": {
-            "*": 5,
-        }
-    },
-    "clock": {
-        "tooltip": true,
-        "tooltip-format": "{:%d.%m}"
-    },
-    "custom/notifications": {
-        "format": "",
-        "on-click": "swaync-client -t"
-    },
-    "network": {
-        "tooltip": false,
-        "format-ethernet": "󰈀",
-        "format-wifi": "  {ifname}",
-        "format-disconnected": "󰖪",
-        "on-click": "nmgui"
+             "*": 5
 
+       }
     },
+
+    "image#fedora": {
+        "path":"/usr/share/ICONS/Fedora.png",
+        "on-click": "kitty",
+        "size": 24
+    },
+
+    "network": {
+        "on-click": "nmgui",
+        "format-ethernet": "󰈀",
+        "format-wifi": "󰖩",
+        "format-disconnected": "󰖪"
+    },
+
     "pulseaudio": {
-        "tooltip": false,
         "on-click": "pavucontrol",
         "format": "{icon}",
-        "scroll-step": 5,
         "format-icons": {
-            "headphone": "",
-            "headphone-muted": "",
-            "speaker": "",
-            "alsa_output.usb-Aisa_Expert_Wireless_Audio-03.analog-stereo": "",
-            "alsa_output.usb-Aisa_Expert_Wireless_Audio-03.analog-stereo-muted": ""
+            "speaker": "󰕾",
+            "speaker-muted":"󰖁",
+            "alsa_output.usb-Aisa_Expert_Wireless_Audio-03.analog-stereo":"󰋋"
         }
-    },
-
-    "custom/kb" : {
-        "format": "",
-        "tooltip": false,
-        "on-click":"~/Documents/SCRIPTS/keyboard.sh"
-    },
-
-    "tray": {
-        "icon-size":18,
-        "spacing":2
     }
 }
-

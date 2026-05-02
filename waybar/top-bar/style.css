@@ -1,184 +1,91 @@
-@import url("nord.css");
+@define-color base        #1e1e1e;  
+@define-color mantle      #181818;   
+@define-color crust       #121212;   
 
-*{
-    background-color: transparent;
-    font-family: "Outfit Medium";
-    font-size: 16;
+@define-color surface0    #2a2a2a;   
+@define-color surface1    #434343;  
+@define-color surface2    #525252; 
+
+
+@define-color text        #d6d6d6;  
+@define-color subtext0    #b8b8b8;   
+@define-color subtext1    #9e9e9e;   
+
+@define-color overlay0    #565656;   
+@define-color overlay1    #686868;
+@define-color overlay2    #7a7a7a;
+
+@define-color blue        #6f8faf;
+@define-color lavender    #8a84b8;
+@define-color sapphire    #5f8c96;
+@define-color sky         #7fa0a8;
+@define-color teal        #6f9b92;
+@define-color green       #7d9a74;
+@define-color yellow      #a89a6f;
+@define-color peach       #b08a72;
+@define-color maroon      #9a6f6f;
+@define-color red         #a06c75;
+@define-color mauve       #9077a8;
+@define-color pink        #a57f96;
+@define-color flamingo    #b08b8b;
+@define-color rosewater   #c0b0b0;
+
+* {
+   font-family: "Outfit Medium";
 }
 
 window#waybar {
-    background-color: @dark0;
+   background-color: @base;
+   margin: 0 10 0 10;
+   border-radius: 10;
 }
 
 #workspaces {
-    background-color: @dark0;
-    margin: 0 0 0 5;
-    padding: 2.5 5;
-    border-radius: 15;
+   margin: 0 0 0 5;
 }
 
 #workspaces button {
-    background-color: @dark3;
-    color: transparent;
-    padding: 0 0;
-    transition: all 0.3s ease-in-out;
-    min-height: 0;
-    border-radius: 15;
-    margin: 6 1;
-   font-family: "Outfit Medium";
+   background-color: @surface0;
+   color: transparent;
+   margin: 7 2;
+   border-radius: 15;
+   padding: 0 0;
+   transition: all 0.2s ease-in-out;
 }
 
- #workspaces button.empty {
-   background-color: @dark1;
-   color: transparent;
+#workspaces button:hover {
+   background-color: @surface1;
+}
+
+#workspaces button.active {
+   background-color: @surface2;
+   transition: all 0.2s ease-in-out;
+   padding: 0 6;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
- }
-
-#workspaces button.active {
-    background-color: @blue2;
-    color: @dark0;
-    transition: all 0.3s ease-in-out;
-    padding: 0 15;
+   background-color: @red;
 }
 
- #clock {
-    background-color: transparent;
-    color: @light0;
-    padding: 0 10;
-    border-radius: 15;
-    margin: 4 6 4 6;
-    font-size: 18;
-   font-family: "Outfit Medium";
- }
-
- #custom-notifications {
-    background-color: transparent;
-    margin: 4 11 4 0;
-    padding: 0 0;
-    border-radius: 15;
-    font-size: 16;
- }
-
- #network {
-    margin: 0 20 0 0;
-    background-color: transparent;
-    border-radius: 15;
-    color: @blue2;
-    font-size: 18;
-    padding: 0 0 1 0;
- }
-
- #pulseaudio {
-    background-color: transparent;
-    padding: 0 0 2 0;
-    border-radius: 15;
-    margin: 4 22 4 0;
-    color: @green;
-    font-size: 17;
- }
-
- .modules-right {
-   background-color: @dark0;
-   margin: 0 0 0 0;
-   padding: 0 6;
-   border-radius: 15;
-   font-family: "Material Symbols Rounded";
- }
-
- .modules-left {
-    background-color: @dark0;
-    margin: 0 0 0 0;
-    padding: 0 0;
-    border-radius: 15;
- }
-
- #custom-launcher {
-    color: @blue2;
-    margin: 0 14 0 5;
-    padding: 2 0 0 0;
-    font-size: 18;
-    font-family: "MesloLGS Nerd Font";
-}
-
-#custom-kb {
-   color: @yellow;
-   margin: 0 23 0 0;
-   padding: 0 0 0 0;
-   background-color: transparent;
-   border-radius: 15;
-   font-family: "MesloLGS Nerd Font";
+#clock {
+   color: @text;
    font-size: 19;
 }
 
-#tray {
-   background-color: transparent;
-   padding: 0 5 0 0;
-   border-radius: 15;
-   margin: 4 5 4 0;
+.modules-right {
+   margin: 0 7 0 0;
 }
 
-#tray menu {
-   background-color: @dark0;
-   margin: 0 0 0 0;
+#network {
+   color: @text;
+   font-size: 19;
+   margin: 0 18 0 0;
 }
 
-#tray widget>image {
-   margin: 0 5 0 0;
+#pulseaudio {
+   color: @text;
+   font-size: 19;
+   margin: 0 18 0 0;
 }
 
-#menu {
-   margin: 4 2 4 0;
-   background-color: @dark1;
-   padding: 0 10 0 11;
-   border-radius: 15;
-}
 
-#utilities {
-   background-color: transparent;
-   margin: 4 0 4 0;
-   border-radius: 15;
-}
-
- #custom-poweroff {
-    color: @red;
-    margin: 0 4 0 0;
-    padding: 0 0 0 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 17;
-
- }
-
-  #custom-reboot {
-    color: @light0;
-    margin: 0 12 0 0;
-    padding: 2 0 0 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 19;
- }
-
-#custom-sleep {
-    color: @light0;
-    margin: 0 10 0 0;
-    padding: 1 0 0 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 19;
- }
-
- #custom-lock {
-    color: @light0;
-    margin: 0 13 0 0;
-    padding: 1 0 0 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 16;
- }
-
- #custom-exit {
-    color: @light0;
-    margin: 0 13 0 2;
-    padding: 2 0 0 0;
-    font-family: "MesloLGS Nerd Font";
-    font-size: 19;
- }

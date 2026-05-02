@@ -23,7 +23,7 @@ textbox-prompt-colon {
 }
 
 * {
-    font: "ProFont IIx Nerd Font 15";
+    font: "Outfit Medium 16";
     background-color: transparent;
     color: @light0;
 

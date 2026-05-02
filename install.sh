@@ -5,8 +5,8 @@ sudo ln -s ~/Pictures/ICONS /usr/share/ICONS
 rm -rf ~/.config/waybar/*
 cp -rf ./waybar/* ~/.config/waybar/
 pkill -9 waybar
-waybar -c ~/.config/waybar/app-bar/config.jsonc -s ~/.config/waybar/app-bar/style.css & disown
 waybar -c ~/.config/waybar/top-bar/config.jsonc -s ~/.config/waybar/top-bar/style.css & disown
+waybar -c ~/.config/waybar/app-bar/config.jsonc -s ~/.config/waybar/app-bar/style.css & disown
 
 rm -rf ~/.config/rofi/*
 cp -rf ./rofi/* ~/.config/rofi/
